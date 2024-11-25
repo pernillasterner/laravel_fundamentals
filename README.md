@@ -1,2 +1,3 @@
-# laravel_fundamentals
+# Laravel Fundamentals
+
 Learning the basics of the PHP framework Laravel
