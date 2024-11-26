@@ -55,7 +55,7 @@ Route::get('/jobs/{id}', function ($id) {
 
     // search for the job with the matching id
     $job = Arr::first($jobs, fn($job) => ($job['id']) == $id);
-            dd($job); // jobs/3
+            // dd($job); // jobs/3
     return view('job', ['job' => $job]);
 
 });
