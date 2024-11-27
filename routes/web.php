@@ -22,7 +22,7 @@ Route::get('/jobs', function (){
 // Give me the job that is equal to the id that was passed in
 Route::get('/jobs/{id}', function ($id){
     // search for the job with the matching id
-    $job = Arr::first(Job::all(), fn($job) => ($job['id']) == $id);
+    $job = Job::find($id);
             // dd($job); // jobs/3
     return view('job', ['job' => $job]);
 
