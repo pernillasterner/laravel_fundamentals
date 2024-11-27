@@ -6,10 +6,14 @@ use App\Models\Job;
 
 
 Route::get('/', function () {
-    return view('home', [
-        'greeting' => 'Hello',
-        'name' => 'Pernilla'
-    ]);
+
+    $jobs = Job::all();
+
+    dd($jobs[0]->title);
+    // return view('home', [
+    //     'greeting' => 'Hello',
+    //     'name' => 'Pernilla'
+    // ]);
 });
 
 Route::get('/jobs', function (){
